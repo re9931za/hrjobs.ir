@@ -63,7 +63,7 @@ const Service2 = () => {
         </p>
         <div className="text-center grid gap-5">
           {productsIT.map((product, index) => (
-            <Paper className="grid place-items-start md:grid-cols-[1fr_2fr] md:text-justify p-3 hover:!ring-1 hover:!text-shadow-sm group">
+            <Paper className="grid place-items-center sm:grid-cols-[1fr_2fr] sm:text-justify p-3 hover:!ring-1 hover:!text-shadow-sm group">
               <img
                 src={`assets/services/productsIT (${index + 1}).gif`}
                 className="group-hover:scale-110 duration-300 max-w-[200px]"

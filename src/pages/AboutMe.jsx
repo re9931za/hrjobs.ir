@@ -85,7 +85,7 @@ const AboutMe = () => {
             <Paper className="grid place-items-center sm:grid-cols-2 p-3 hover:!ring-1 hover:!text-shadow-sm group">
               <img
                 src={`assets/aboutme/${index + 1}.svg`}
-                className="group-hover:rotate-6 duration-300"
+                className="group-hover:scale-110 duration-300 max-w-[200px]"
               />
               <div>
                 <b>{benefit[0]}</b>

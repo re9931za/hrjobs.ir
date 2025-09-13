@@ -20,7 +20,7 @@ const Home = () => {
         شما آموزش می‌دهند تا در آینده راهبران کسب و کار شما با قدرت بیشتری
         فعالیت کنند
       </p>
-      <div className="my-10 grid md:grid-cols-2 items-center gap-10">
+      <div className="my-10 grid sm:grid-cols-2 items-center gap-10">
         <Paper className="">
           <p className="py-3 text-xl font-bold text-center">
             اهمیت مدیریت سرمایه انسانی
@@ -60,7 +60,7 @@ const Home = () => {
         <SliderProducts />
       </div>
       {/* video */}
-      <div className="lg:grid grid-cols-[1fr_2fr] items-center text-center lg:text-start gap-x-10">
+      <div className="sm:grid grid-cols-[1fr_2fr] items-center text-center sm:text-start gap-x-10">
         <div className="my-10 space-y-5 ">
           <h2 className="font-extrabold bg-blue-200 text-center py-5 rounded-lg">
             توسعه سرمایه انسانی شمال همراه با تعالی سازمان
