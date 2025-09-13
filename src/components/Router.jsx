@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import { Container, Grid, Stack } from "@mui/material";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -44,7 +44,7 @@ export let menuData = [
 //create route
 export default function Router() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Stack minHeight={"100vh"}>
         <Header />
         <Container sx={{ flexGrow: 1 }}>
@@ -61,10 +61,11 @@ export default function Router() {
                 </>
               )
             )}
+            <Route path="*" element={<Home />} />
           </Routes>
         </Container>
         <Footer />
       </Stack>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
