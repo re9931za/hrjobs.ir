@@ -48,10 +48,10 @@ const Home = () => {
         <p className="  mt-10 mb-5 text-center font-bold text-xl">
           خدمات و محصولات شرکت توسعه سرمایه انسانی شمال
         </p>
-        <div className="md:hidden">
+        <div className="sm:hidden">
           <HomeAccordions />
         </div>
-        <div className="hidden md:block">
+        <div className="hidden sm:block">
           <HomeTabs />
         </div>
         <p className="  mt-10 mb-5 text-center font-bold text-xl">
@@ -78,7 +78,7 @@ const Home = () => {
         <video
           controls
           src="assets/home/video.mp4"
-          className="cursor-pointer rounded-xl"
+          className="cursor-pointer rounded-xl w-full"
         ></video>
       </div>
     </div>
