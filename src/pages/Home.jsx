@@ -39,7 +39,7 @@ const Home = () => {
           </ul>
         </Paper>
         <img
-          src="/assets/home/HR.jpg"
+          src="assets/home/HR.jpg"
           className="drop-shadow-2xl drop-shadow-blue-800"
         />
       </div>
