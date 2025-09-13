@@ -96,7 +96,7 @@ const AboutMe = () => {
           ))}
         </div>
         <p className=" py-5 mt-5 text-2xl text-center font-extrabold">
-          خدمات و محصولات شرکت توسعه سرمایه انسانی شمال
+          خدمات و محصولات اچ آر جابز
         </p>
         <div className="sm:hidden">
           <HomeAccordions />

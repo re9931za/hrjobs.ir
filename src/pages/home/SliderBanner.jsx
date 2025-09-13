@@ -26,7 +26,8 @@ export function SliderBanner() {
         pagination={{
           clickable: true,
         }}
-        slidesPerView={2}
+        breakpoints={{ 0: { slidesPerView: 1 }, 768: { slidesPerView: 2 } }}
+        // slidesPerView={2}
         centeredSlides
         spaceBetween={20}
         // autoplay

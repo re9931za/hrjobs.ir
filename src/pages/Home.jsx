@@ -46,7 +46,7 @@ const Home = () => {
       {/* apps description */}
       <div className=" p-5 my-5">
         <p className="  mt-10 mb-5 text-center font-bold text-xl">
-          خدمات و محصولات شرکت توسعه سرمایه انسانی شمال
+          خدمات و محصولات اچ آر جابز
         </p>
         <div className="sm:hidden">
           <HomeAccordions />
@@ -55,7 +55,7 @@ const Home = () => {
           <HomeTabs />
         </div>
         <p className="  mt-10 mb-5 text-center font-bold text-xl">
-          با ما همراه باشید جهت تعالی سازمان{" "}
+          شرکت هایی که افتخار همکاری با آنها داشتیم
         </p>
         <SliderProducts />
       </div>

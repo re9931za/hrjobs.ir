@@ -50,8 +50,8 @@ const Header = () => {
           </Box>
           <b className="text-xs sm:hidden grow">
             <div className="grid">
-              <p>توسعه سرمایه</p>
-              <p>انسانی شمال</p>
+              <p>اچ آر</p>
+              <p>جایز</p>
             </div>
           </b>
           {/* menus */}

@@ -4,7 +4,7 @@ const Services = () => {
   return (
     <div>
       <p className="  mt-10 mb-5 text-center font-bold text-xl">
-        خدمات و محصولات شرکت توسعه سرمایه انسانی شمال
+        خدمات و محصولات اچ آر جابز
       </p>
       <HomeGrid />
     </div>

@@ -20,8 +20,8 @@ const DrawerMain = ({ setShowDrawer }) => {
         </IconButton>
         <b className="text-xs self-center">
           <div className="grid">
-            <p>توسعه سرمایه</p>
-            <p>انسانی شمال</p>
+            <p>اچ آر</p>
+            <p>جابز</p>
           </div>
         </b>
       </Box>

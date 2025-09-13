@@ -55,7 +55,7 @@ const Service2 = () => {
           <img
             src="assets/services/product.webp"
             alt=""
-            className="max-w-[400px]"
+            className="max-w-[300px]"
           />
         </div>
         <p className="text-center font-bold text-2xl m-5">
@@ -63,10 +63,10 @@ const Service2 = () => {
         </p>
         <div className="text-center grid gap-5">
           {productsIT.map((product, index) => (
-            <Paper className="grid place-items-start md:grid-cols-2 md:text-justify p-3 hover:!ring-1 hover:!text-shadow-sm group">
+            <Paper className="grid place-items-start md:grid-cols-[1fr_2fr] md:text-justify p-3 hover:!ring-1 hover:!text-shadow-sm group">
               <img
                 src={`assets/services/productsIT (${index + 1}).gif`}
-                className="group-hover:rotate-6 duration-300"
+                className="group-hover:scale-110 duration-300 max-w-[200px]"
               />
               <div>
                 <p className="mt-5 mb-3 font-bold text-xl">{product[0]}</p>
