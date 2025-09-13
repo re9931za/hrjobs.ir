@@ -69,7 +69,7 @@ export function SliderBanner() {
       <div className="mt-2 flex justify-center gap-10 *:cursor-pointer  *:hover:scale-125">
         <button onClick={() => swiper.current.slidePrev()}>
           <img
-            src="/assets/icons/streamline-color--button-next.svg"
+            src="assets/icons/streamline-color--button-next.svg"
             alt=""
             title="بعدی"
           />
@@ -82,21 +82,21 @@ export function SliderBanner() {
         >
           <img
             title="ادامه"
-            src="/assets/icons/streamline-ultimate-color--button-play.svg"
+            src="assets/icons/streamline-ultimate-color--button-play.svg"
             alt=""
           />
         </button>
         <button onClick={() => swiper.current.autoplay.stop()}>
           <img
             title="توقف"
-            src="/assets/icons/streamline-ultimate-color--button-stop.svg"
+            src="assets/icons/streamline-ultimate-color--button-stop.svg"
             alt=""
           />
         </button>
         <button onClick={() => swiper.current.slideNext()}>
           <img
             title="قبلی"
-            src="/assets/icons/streamline-color--button-previous.svg"
+            src="assets/icons/streamline-color--button-previous.svg"
             alt=""
           />
         </button>

@@ -22,7 +22,7 @@ const AboutMe = () => {
           </p>
         </div>
         <div className="flex-1 self-center">
-          <img src="/assets/logo/logo_1.png" className="w-full h-auto" />
+          <img src="assets/logo/logo_1.png" className="w-full h-auto" />
         </div>
       </div>
       {/* team */}
@@ -84,7 +84,7 @@ const AboutMe = () => {
           {benefits.map((benefit, index) => (
             <Paper className="grid place-items-center sm:grid-cols-2 p-3 hover:!ring-1 hover:!text-shadow-sm group">
               <img
-                src={`/assets/aboutme/${index + 1}.svg`}
+                src={`assets/aboutme/${index + 1}.svg`}
                 className="group-hover:rotate-6 duration-300"
               />
               <div>

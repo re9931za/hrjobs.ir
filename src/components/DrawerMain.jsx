@@ -15,7 +15,7 @@ const DrawerMain = ({ setShowDrawer }) => {
       <Box sx={{ textAlign: "center", display: "flex" }}>
         <IconButton onClick={() => setShowDrawer(false)}>
           <Link to="/">
-            <Avatar src="/assets/icons/logo.png"></Avatar>
+            <Avatar src="assets/icons/logo.png"></Avatar>
           </Link>
         </IconButton>
         <b className="text-xs self-center">

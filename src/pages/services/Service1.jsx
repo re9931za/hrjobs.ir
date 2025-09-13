@@ -6,7 +6,7 @@ const Service1 = () => {
       <div>
         <div
           className="grid lg:grid-cols-2 place-items-center gap-5 p-5 text-justify
-        bg-[url('/assets/services/banner.webp')] bg-cover
+        bg-[url('assets/services/banner.webp')] bg-cover
         "
         >
           <div>
@@ -65,7 +65,7 @@ const Service1 = () => {
               </li>
             </ul>
           </div>
-          <img src="/assets/services/IT.gif" alt="" className="max-w-[400px]" />
+          <img src="assets/services/IT.gif" alt="" className="max-w-[400px]" />
         </div>
         <p className="text-center font-bold text-2xl m-5">
           خدمات مشاوره ای منابع انسانی
@@ -74,7 +74,7 @@ const Service1 = () => {
           {products.map((product, index) => (
             <Paper className="grid place-items-center md:grid-cols-[1fr_2fr] md:text-justify p-3 hover:!ring-1 hover:!text-shadow-sm group">
               <img
-                src={`/assets/home/product (${index + 1}).svg`}
+                src={`assets/home/product (${index + 1}).svg`}
                 className="group-hover:scale-110 duration-300 max-w-[200px]"
               />
               <div>

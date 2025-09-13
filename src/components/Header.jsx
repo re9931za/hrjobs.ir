@@ -44,7 +44,7 @@ const Header = () => {
           <Box sx={{ flexGrow: { sm: 0 } }}>
             <IconButton>
               <Link to="/">
-                <Avatar src="/assets/icons/logo.png"></Avatar>
+                <Avatar src="assets/icons/logo.png"></Avatar>
               </Link>
             </IconButton>
           </Box>

@@ -20,7 +20,7 @@ const Home = () => {
         شما آموزش می‌دهند تا در آینده راهبران کسب و کار شما با قدرت بیشتری
         فعالیت کنند
       </p>
-      <div className="my-10 md:grid grid-cols-2 items-center gap-10">
+      <div className="my-10 grid md:grid-cols-2 items-center gap-10">
         <Paper className="">
           <p className="py-3 text-xl font-bold text-center">
             اهمیت مدیریت سرمایه انسانی
@@ -40,7 +40,7 @@ const Home = () => {
         </Paper>
         <img
           src="assets/home/HR.jpg"
-          className="drop-shadow-2xl drop-shadow-blue-800"
+          className="drop-shadow-xl  drop-shadow-gray-800"
         />
       </div>
       {/* apps description */}
@@ -77,7 +77,7 @@ const Home = () => {
 
         <video
           controls
-          src="/assets/home/video.mp4"
+          src="assets/home/video.mp4"
           className="cursor-pointer rounded-xl w-full"
         ></video>
       </div>
