@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
-    "homepage": "https://github.com/re9931za/hrjobs.ir"
+    "homepage": "https://re9931za.github.io"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
