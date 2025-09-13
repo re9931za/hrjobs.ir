@@ -45,7 +45,7 @@ export let menuData = [
 export default function Router() {
   return (
     <HashRouter>
-      <Stack minHeight={"100vh"}>
+      <Stack minHeight={"100dvh"}>
         <Header />
         <Container sx={{ flexGrow: 1 }}>
           <Routes>

@@ -39,7 +39,7 @@ const Home = () => {
           </ul>
         </Paper>
         <img
-          src="../../public/assets/home/HR.jpg"
+          src="/assets/home/HR.jpg"
           className="drop-shadow-2xl drop-shadow-blue-800"
         />
       </div>
@@ -77,7 +77,7 @@ const Home = () => {
 
         <video
           controls
-          src="assets/home/video.mp4"
+          src="/assets/home/video.mp4"
           className="cursor-pointer rounded-xl w-full"
         ></video>
       </div>

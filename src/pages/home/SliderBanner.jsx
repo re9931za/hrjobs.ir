@@ -14,7 +14,7 @@ export function SliderBanner() {
   const swiper = useRef(null);
 
   return (
-    <div className="h-[20vw] pb-5">
+    <div className="h-[20vw] min-h-[200px] pb-5">
       <Swiper
         className="size-full !p-1"
         dir="ltr"

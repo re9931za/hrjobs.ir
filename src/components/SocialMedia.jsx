@@ -2,20 +2,6 @@ export function SocialMedia() {
   return (
     <div className={`flex justify-center [&_*]:size-5 gap-3`}>
       <a href="/">
-        <img
-          decoding="async"
-          src="/public/assets/logo/aparat.png"
-          loading="lazy"
-        ></img>
-      </a>
-      <a href="/">
-        <img
-          decoding="async"
-          src="/public/assets/logo/insta.png"
-          loading="lazy"
-        ></img>
-      </a>
-      <a href="/">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="256"

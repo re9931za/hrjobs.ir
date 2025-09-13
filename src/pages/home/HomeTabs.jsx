@@ -91,7 +91,7 @@ export function HomeTabs() {
                 </Button>
               </div>
               <img
-                src={`../../../public/assets/home/product (${index + 1}).svg`}
+                src={`/assets/home/product (${index + 1}).svg`}
                 alt=""
                 className="size-[200px] place-self-center object-contain"
               />

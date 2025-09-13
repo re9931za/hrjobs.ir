@@ -6,7 +6,7 @@ const Service2 = () => {
       <div>
         <div
           className="grid lg:grid-cols-2 place-items-center gap-5 p-5 text-justify
-        bg-[url('../../../public/assets/services/banner.webp')] bg-cover
+        bg-[url('/assets/services/banner.webp')] bg-cover
         "
         >
           <div>
@@ -53,7 +53,7 @@ const Service2 = () => {
             </ul>
           </div>
           <img
-            src="../../../public/assets/services/product.webp"
+            src="/assets/services/product.webp"
             alt=""
             className="max-w-[400px]"
           />
@@ -65,9 +65,7 @@ const Service2 = () => {
           {productsIT.map((product, index) => (
             <Paper className="grid place-items-start md:grid-cols-2 md:text-justify p-3 hover:!ring-1 hover:!text-shadow-sm group">
               <img
-                src={`../../public/assets/services/productsIT (${
-                  index + 1
-                }).gif`}
+                src={`/assets/services/productsIT (${index + 1}).gif`}
                 className="group-hover:rotate-6 duration-300"
               />
               <div>

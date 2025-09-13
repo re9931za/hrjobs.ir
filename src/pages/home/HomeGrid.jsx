@@ -11,7 +11,7 @@ export function HomeGrid() {
         return (
           <Paper className="flex flex-col items-center">
             <img
-              src={`../../../public/assets/home/product (${index + 1}).svg`}
+              src={`/assets/home/product (${index + 1}).svg`}
               alt=""
               className="w-1/4"
             />
