@@ -6,19 +6,19 @@ import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
 import { Link, useNavigate } from "react-router-dom";
 
 import { SocialMedia } from "./SocialMedia";
+import { Logo } from "./Logo";
 const DrawerMain = ({ setShowDrawer }) => {
   const [accIndex, setAccIndex] = useState(false);
   const navigate = useNavigate();
 
   return (
-    <Drawer open onClose={() => setShowDrawer(false)}>
-      <Box sx={{ textAlign: "center", display: "flex" }}>
-        <IconButton onClick={() => setShowDrawer(false)}>
-          <Link to="/">
-            <Avatar src="assets/icons/logo.png"></Avatar>
-          </Link>
-        </IconButton>
-        <b className="text-xs self-center">
+    <Drawer open onClose={() => setShowDrawer(false)} sx={{ borderRadius: 0 }}>
+      <Box
+        sx={{ textAlign: "center", display: "flex" }}
+        onClick={() => setShowDrawer(false)}
+      >
+        <Logo />
+        <b className="text-xs self-center text-blue">
           <div className="grid">
             <p>اچ آر</p>
             <p>جابز</p>

@@ -20,6 +20,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import DrawerMain from "./DrawerMain";
 import { DarkMode } from "../App";
 import { red } from "@mui/material/colors";
+import { Logo } from "./Logo";
 const Header = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [showDrawer, setShowDrawer] = useState(false);
@@ -42,16 +43,17 @@ const Header = () => {
         <Toolbar className="!p-0 !m-0">
           {/* logo HR */}
           <Box sx={{ flexGrow: { sm: 0 } }}>
-            <IconButton>
-              <Link to="/">
-                <Avatar src="assets/icons/logo.png"></Avatar>
-              </Link>
-            </IconButton>
+            {/* <IconButton> */}
+            {/* <Link to="/"> */}
+            {/* <Avatar src="assets/icons/logo.png"></Avatar> */}
+            <Logo />
+            {/* </Link> */}
+            {/* </IconButton> */}
           </Box>
           <b className="text-xs sm:hidden grow">
-            <div className="grid">
+            <div className="grid text-blue">
               <p>اچ آر</p>
-              <p>جایز</p>
+              <p>جابز</p>
             </div>
           </b>
           {/* menus */}
