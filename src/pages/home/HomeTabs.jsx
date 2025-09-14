@@ -76,28 +76,26 @@ export function HomeTabs() {
         ))}
       </Tabs>
       {products.map((item, index) => (
-        <div>
-          <TabPanel value={value} index={index}>
-            <div className="grid grid-cols-[2fr_1fr] gap-10 place-content-center">
-              <div className=" flex flex-col text-start ">
-                <p className="font-bold my-3">{item[0]}</p>
-                <p className="grow">{item[1]}</p>
-                <Button
-                  endIcon={<ArrowBackIcon />}
-                  variant="contained"
-                  className="self-end !text-xs !mt-5"
-                >
-                  توضیح بیشتر
-                </Button>
-              </div>
-              <img
-                src={`assets/home/product (${index + 1}).svg`}
-                alt=""
-                className="size-[200px] place-self-center object-contain"
-              />
+        <TabPanel value={value} index={index} className="overflow-y-auto ">
+          <div className="grid grid-cols-[2fr_1fr] gap-10 place-content-center">
+            <div className=" flex flex-col text-start">
+              <p className="font-bold">{item[0]}</p>
+              <p className="grow text-justify">{item[1]}</p>
+              <Button
+                endIcon={<ArrowBackIcon />}
+                variant="contained"
+                className="self-end !text-xs !mt-5"
+              >
+                توضیح بیشتر
+              </Button>
             </div>
-          </TabPanel>
-        </div>
+            <img
+              src={`assets/home/product (${index + 1}).svg`}
+              alt=""
+              className="place-self-start size-[200px] object-contain"
+            />
+          </div>
+        </TabPanel>
       ))}
     </Box>
   );

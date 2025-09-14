@@ -137,7 +137,7 @@ const ContactUs = () => {
             <div>
               <div>
                 <p className="font-bold">ایمیل</p>
-                <p>hrjobs@gmail.com</p>
+                <p>info@hrjobs.ir</p>
               </div>
             </div>
           </div>

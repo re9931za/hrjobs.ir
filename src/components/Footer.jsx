@@ -14,7 +14,7 @@ const Footer = () => {
     >
       {" "}
       <Container>
-        <div className="grid text-center md:text-right md:grid-cols-2">
+        <div className="grid text-center sm:text-right sm:grid-cols-2">
           <div className="pt-5 *:px-5 *:py-1 *:block">
             <a href="/">خانه</a>
             <a href="/aboutme">درباره ما</a>
@@ -29,10 +29,10 @@ const Footer = () => {
 
         <div className={`shadow-xl`}>
           <hr className="text-gray-400 shadow-2xs" />
-          <div className="p-3 md:flex md:justify-between space-y-2">
-            <p className="text-xs text-center self-center md:text-righ">
-              کلیه حقوق مادی و معنوی این وب‌سایت متعلق به شرکت توسعه سرمايه
-              انساني شمال می‌باشد.
+          <div className="p-3 sm:flex sm:justify-between space-y-2">
+            <p className="text-xs text-center self-center sm:text-righ">
+              کلیه حقوق مادی و معنوی این وب‌سایت متعلق به اچ آر جابز می‌باشد.
+              HRJOBS(1404)
             </p>
             <SocialMedia />
           </div>

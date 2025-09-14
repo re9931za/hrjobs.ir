@@ -42,20 +42,15 @@ const Header = () => {
       <Container>
         <Toolbar className="!p-0 !m-0">
           {/* logo HR */}
-          <Box sx={{ flexGrow: { sm: 0 } }}>
-            {/* <IconButton> */}
-            {/* <Link to="/"> */}
-            {/* <Avatar src="assets/icons/logo.png"></Avatar> */}
-            <Logo />
-            {/* </Link> */}
-            {/* </IconButton> */}
+          <Box sx={{ flexGrow: { xs: 1, sm: 0 } }}>
+            <a href="/">
+              <img
+                src="assets/icons/logo.png"
+                className="rounded-md h-9"
+                alt=""
+              />
+            </a>
           </Box>
-          <b className="text-xs sm:hidden grow">
-            <div className="grid text-blue">
-              <p>اچ آر</p>
-              <p>جابز</p>
-            </div>
-          </b>
           {/* menus */}
           <Box sx={{ display: { xs: "none", sm: "flex" }, flexGrow: 1 }}>
             {menuData.map((menu, index) => (

@@ -41,7 +41,7 @@ const Home = () => {
         </Paper>
         <img
           src="assets/home/HR.jpg"
-          className="drop-shadow-xl  drop-shadow-gray-800"
+          className="drop-shadow-xl  drop-shadow-gray-800 rounded-lg"
         />
       </div>
       {/* apps description */}

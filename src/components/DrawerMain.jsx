@@ -12,68 +12,73 @@ const DrawerMain = ({ setShowDrawer }) => {
   const navigate = useNavigate();
 
   return (
-    <Drawer open onClose={() => setShowDrawer(false)} sx={{ borderRadius: 0 }}>
+    <Drawer
+      open
+      onClose={() => setShowDrawer(false)}
+      sx={{ borderRadius: 0 }}
+      slotProps={{ paper: { sx: { borderRadius: 0 } } }}
+    >
       <Box
-        sx={{ textAlign: "center", display: "flex" }}
+        sx={{ textAlign: "center", display: "flex", justifyContent: "center" }}
         onClick={() => setShowDrawer(false)}
       >
-        <Logo />
-        <b className="text-xs self-center text-blue">
-          <div className="grid">
-            <p>اچ آر</p>
-            <p>جابز</p>
-          </div>
-        </b>
+        <a href="/">
+          <img src="assets/icons/logo.png" className="rounded-md h-9" alt="" />
+        </a>
       </Box>
 
-      <div className="flex flex-col grow-1">
-        {menuData.map((menu, index) =>
-          menu.sub.length === 0 ? (
-            <Button
-              sx={{ justifyContent: "start" }}
-              onClick={() => {
-                navigate(menu.path);
-                setShowDrawer(false);
-              }}
-            >
-              {menu.caption}
-            </Button>
-          ) : (
-            <div>
+      <div className="flex flex-col grow-1 mt-3">
+        {menuData.map((menu, index) => (
+          <div>
+            <hr className="text-gray-300 shadow-2xs" />
+            {menu.sub.length === 0 ? (
               <Button
                 fullWidth
-                onClick={() =>
-                  index === accIndex ? setAccIndex(false) : setAccIndex(index)
-                }
+                sx={{ justifyContent: "start" }}
+                onClick={() => {
+                  navigate(menu.path);
+                  setShowDrawer(false);
+                }}
               >
-                <div className="w-full flex justify-between">
-                  {menu.caption}
-                  {index === accIndex ? (
-                    <KeyboardArrowUp />
-                  ) : (
-                    <KeyboardArrowDown />
-                  )}
-                </div>
+                {menu.caption}
               </Button>
-              {index === accIndex && (
-                <Stack>
-                  {menu.sub.map((item, i) => (
-                    <Button
-                      sx={{ justifyContent: "start", pl: 3 }}
-                      key={i}
-                      onClick={() => {
-                        navigate(item.path);
-                        setShowDrawer(false);
-                      }}
-                    >
-                      {item.caption}
-                    </Button>
-                  ))}
-                </Stack>
-              )}
-            </div>
-          )
-        )}
+            ) : (
+              <div>
+                <Button
+                  fullWidth
+                  onClick={() =>
+                    index === accIndex ? setAccIndex(false) : setAccIndex(index)
+                  }
+                >
+                  <div className="w-full flex justify-between">
+                    {menu.caption}
+                    {index === accIndex ? (
+                      <KeyboardArrowUp />
+                    ) : (
+                      <KeyboardArrowDown />
+                    )}
+                  </div>
+                </Button>
+                {index === accIndex && (
+                  <Stack>
+                    {menu.sub.map((item, i) => (
+                      <Button
+                        sx={{ justifyContent: "start", pl: 3 }}
+                        key={i}
+                        onClick={() => {
+                          navigate(item.path);
+                          setShowDrawer(false);
+                        }}
+                      >
+                        {item.caption}
+                      </Button>
+                    ))}
+                  </Stack>
+                )}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
       <SocialMedia />
     </Drawer>
